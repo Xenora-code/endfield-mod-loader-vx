@@ -21,9 +21,9 @@ def scan_mods(mods_root: Path) -> List[ModInfo]:
     found: List[ModInfo] = []
 
     for manifest in mods_root.rglob("manifest.json"):
-        folder = manifest.parent
-        rel = str(folder.relative_to(mods_root)).replace("\\", "/")
-        errors, warnings = [], []
+    # Ignore generated active pack
+    if "_active" in manifest.parts:
+        continue
 
         try:
             data = json.loads(manifest.read_text(encoding="utf-8"))
@@ -40,7 +40,7 @@ def scan_mods(mods_root: Path) -> List[ModInfo]:
         version = (data.get("version") or "0.0.0")
         author = (data.get("author") or "")
         description = (data.get("description") or "")
-        mod_type = (data.get("type") or "folder")
+        mod_type = str(data.get("type") or "folder").lower()
 
         # basic validation
         if not data.get("id"):
@@ -59,3 +59,4 @@ def scan_mods(mods_root: Path) -> List[ModInfo]:
 
     found.sort(key=lambda m: m.rel_path.lower())
     return found
+
