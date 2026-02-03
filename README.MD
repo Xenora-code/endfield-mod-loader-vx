@@ -7,6 +7,11 @@
 
 **An open-source launcher and mod manager for Arknights: Endfield**
 
+## How To Run
+
+1) Open PowerShell in ( endfield mod loader vx ) **Hold Shift Open Terminal/PowerShell**
+2) Run it (best method) **Copy This -> ( python -m launcher ) Then Paste Into Terminal Hit Enter**
+
 ## Goals
 - Provide a safe, extendable mod manager
 - Encourage cosmetic and UI-based mods
