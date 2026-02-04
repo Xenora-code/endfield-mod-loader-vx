@@ -10,8 +10,8 @@
 ## For Users (Run Without an EXE)
 
 1. **Install Python**
-   - Install Python 3.10+ from https://www.python.org/
-   - Make sure **“Add Python to PATH”** is checked during install.
+   **- Install Python 3.10+ from https://www.python.org/**
+   **- Make sure **“Add Python to PATH”** is checked during install.**
 
 2. **Install dependencies**
    ```powershell
@@ -19,7 +19,7 @@
 
 ### Developer setup
 
-pip install -r requirements.txt
+1.pip install -r requirements.txt
 pip install -r requirements-dev.txt
 pyinstaller launcher\__main__.py
 
