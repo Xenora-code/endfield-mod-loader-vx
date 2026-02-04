@@ -20,7 +20,7 @@
 ### Developer setup
 
    ```Bash
-1. pip install -r requirements.txt
+pip install -r requirements.txt
 pip install -r requirements-dev.txt
 pyinstaller launcher\__main__.py
 
