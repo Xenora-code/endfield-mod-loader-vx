@@ -7,8 +7,6 @@
 
 **An open-source launcher and mod manager for Arknights: Endfield**
 
-## How To Run
-
 ## For Users (Run Without an EXE)
 
 1. **Install Python**
