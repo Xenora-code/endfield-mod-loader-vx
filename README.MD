@@ -28,16 +28,17 @@ This design is intentional to remain compatible with **IL2CPP-based games** and 
 
 - Note: You Can Use This Free Of Permission Either For Learning Or Usage!
 
-## License
-MIT
-
 ## Other
 This project is a community-driven mod manager.
 It does not support cheating, exploits, or violation of game terms.
 Users are responsible for compliance with the game's EULA.
 
+## License
+MIT
 
-## For Users (Run Without an EXE)
+## How To Run
+
+For Users (Run Without an EXE)
 
 1. **Install Python**
    - Install Python 3.10+ from https://www.python.org/
